@@ -1,0 +1,20 @@
+<div class="instagram-container">
+  <img src="insta1.jpg" alt="Imagem">
+  <button id="curtir-button">curtir</button>
+  <i id="coracao-icon" class="fas fa-heart"></i>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</i>
+</div>
+
+<div id="icone-container">
+  <i id="coracao-icon" class="fas fa-heart" style="display: none;"></i> <!-- Mova o ícone de coração para este contêiner -->
+</div>
+<script>
+const buttonCurtir = document.getElementById('curtir-button');
+const coracaoIcon = document.getElementById('coracao-icon');
+
+buttonCurtir.addEventListener('click', () => {
+  coracaoIcon.style.display = coracaoIcon.style.display === 'none' ? 'inline' : 'none';
+});
+</script>
