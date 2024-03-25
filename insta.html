@@ -1,20 +1,38 @@
-<div class="instagram-container">
-  <img src="insta1.jpg" alt="Imagem">
-  <button id="curtir-button">curtir</button>
-  <i id="coracao-icon" class="fas fa-heart"></i>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-</i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Home Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    background-color: #3897f0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .instagram-logo {
+    font-size: 3rem;
+  }
+</style>
+</head>
+<body>
+<div class="navbar">Instagram</div>
+<div class="content">
+  <i class="fab fa-instagram instagram-logo"></i>
 </div>
-
-<div id="icone-container">
-  <i id="coracao-icon" class="fas fa-heart" style="display: none;"></i> <!-- Mova o ícone de coração para este contêiner -->
-</div>
-<script>
-const buttonCurtir = document.getElementById('curtir-button');
-const coracaoIcon = document.getElementById('coracao-icon');
-
-buttonCurtir.addEventListener('click', () => {
-  coracaoIcon.style.display = coracaoIcon.style.display === 'none' ? 'inline' : 'none';
-});
-</script>
+</body>
+</html>
